@@ -1,9 +1,276 @@
-.container {
-    display: flex;
-    flex-direction: column;
+@import "reset.css";
+
+/* SETTINGS */
+html {
+    --black: #333;
+    --white: #f9faf8;
+    --button: #3882f6;
+    --light: #e5e7eb;
+    --dark: #1f2937;
 }
 
-.headercon {
+/* SETUP */
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+picture {
+    display: block;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* DEV STYLES */
+
+/* body * {
+    border: 1px solid blue;
+    padding: 2px;
+} */
+
+
+
+
+/* STRUCTURE */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+
+}
+
+inner-column {
+    display: block;
+    padding: 10px;
+    /**/
+    width: 98%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    /**/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+header,
+footer {
+    background-color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+header h2 {
+    font-size: 24px;
+    color: var(--white);
+}
+
+header inner-column {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
+
+header inner-column,
+footer inner-column {
+    padding: 10px;
+}
+
+/* TYPOGRAPHY */
+text-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+text-content p {
+    font-size: 18px;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    color: var(--white);
+}
+
+
+/* COMPONENTS */
+.button {
+    display: inline-block;
+    background-color: var(--button);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+}
+
+product-card {
+    display: block;
+    width: 150px;
+}
+
+/* MODULES */
+header nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: var(--light);
+}
+
+graphic-diptych {
+    display: block;
+}
+
+graphic-diptych text-content {
+    display: block;
+}
+
+graphic-diptych p {
+    font-weight: lighter;
+}
+
+@media (min-width: 700px) {
+    graphic-diptych {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    graphic-diptych :is(text-content, picture) {
+        flex-basis: 50%;
+    }
+}
+
+product-grid {
+    display: block;
+}
+
+product-grid h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark);
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+product-grid ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.4em;
+}
+
+product-grid li picture {
+    width: 150px;
+    height: 150px;
+    border: 3px var(--button) solid;
+    border-radius: 10px;
+}
+
+product-grid li text-content {
+    text-align: center;
+    color: darkslategray;
+    line-height: 1.2em;
+}
+/* product-grid .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+} */
+
+
+quote-block {
+    display: block;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+quote-block h2 {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: light;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+quote-block h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+cta-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: var(--button);
+    border-radius: 6px;
+    max-width: 1100px;
+    height: 100px;
+    line-height: 1.2rem;
+
+}
+
+cta-block h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--white);
+}
+
+cta-block h3 {
+    font-size: .9em;
+    font-weight: light;
+    color: var(--light);
+}
+
+cta-block .button {
+    font-size: .8em;
+    border: 1px var(--white) solid;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.awesome {
+    background-color: var(--dark);
+}
+
+.testimonial {
+    background-color: var(--light);
+}
+
+
+

@@ -5,45 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" />
   <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="headercon">
-                <div class="headerlogo">Header Logo</div>
-                <a href="/">header link one</a>
-                <a href="/">header link two</a>
-                <a href="/">header link three</a>
-            </div>
-        </header>
-        <main>
-            <div class="maincon">
-                <div class="con1">
-                    
-                </div>
-                <div class="con2 info">
+    <header>
+        <inner-column>
+            <h2>Header Logo</h2>
 
-                </div>
-                <div class="con3 quote">
+            <nav>
+                <a href="#">header link one</a>
+                <a href="#">header link two</a>
+                <a href="#">header link three</a>
+            </nav>
+        </inner-column>
+    </header>
 
-                </div>
-                <div class="con4 signup">
-                    <div class="signupcon">
-                        <div class="signuptext">
-                            <h3>Call to action! It's time!</h3>
-                            <p>Sign up for our product by clicking that button right over there!</p>
-                        </div>
-                        <button type="button" class="signupbutton">Sign Up</button>
+    <main>
+        <section class="awesome">
+            <inner-column>
+
+                <graphic-diptych>
+                    <picture>
+                        <img src="images/wp4511654-scenery-night-digital-art-wallpapers.jpg" alt="Landscape">
+                    </picture>
+
+                    <text-content>
+                        <h1>This website is awesome</h1>
+
+                        <p>This website has some subtext that goes here under the <br> main title. It's a smaller font and the color is lower <br> contrast</p>
+                        
+                        <a class="button" href="#">Sign up</a>
+                    </text-content>
+                </graphic-diptych>
+
+            </inner-column>
+        </section>
+
+        <section class="info">
+            <inner-column>
+
+                <product-grid>
+                    <div>
+                        <h2>Some random information.</h2>
                     </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footercon">
-                <p>Copyright &copy; The Odin Project 2021</p>
-            </div>
-        </footer>
-    </div>
+
+                    <ul class="product-list">
+                        <li class="product">
+                            <product-card>
+                                <picture>
+                                    <img src="data:," alt>
+                                </picture>
+
+                                <text-content>
+                                    <h3> this is some subtext under an illustration or image</h3>
+                                </text-content>
+                            </product-card>
+                        </li>
+
+                        <li class="product">
+                            <product-card>
+                                <picture>
+                                    <img src="data:," alt>
+                                </picture>
+
+                                <text-content>
+                                    <h3> this is some subtext under an illustration or image</h3>
+                                </text-content>
+                            </product-card>
+                        </li>
+
+                        <li class="product">
+                            <product-card>
+                                <picture>
+                                    <img src="data:," alt>
+                                </picture>
+
+                                <text-content>
+                                    <h3> this is some subtext under an illustration or image</h3>
+                                </text-content>
+                            </product-card>
+                        </li>
+
+                        <li class="product">
+                            <product-card>
+                                <picture>
+                                    <img src="data:," alt>
+                                </picture>
+
+                                <text-content>
+                                    <h3> this is some subtext under an illustration or image</h3>
+                                </text-content>
+                            </product-card>
+                        </li>
+                    </ul>
+                </product-grid>
+
+            </inner-column>
+        </section>
+
+        <section class="testimonial">
+            <inner-column>
+
+                <quote-block>
+                    <div class="quote">
+                        <h2>This is an inspiring quote, or a testimonial from a customer. Maybe it's just 
+                            filling up space, or maybe people will actually read it. Who knows? All I know 
+                            is that it looks nice.
+                        </h2>
+                    </div>
+                    <div class="source">
+                        <h3>-Thor, God of Thunder</h3>
+                    </div>
+                </quote-block>
+
+            </inner-column>
+        </section>
+
+        <section class="call-to-action">
+            <inner-column>
+
+                <cta-block>
+                    <text-content>
+                        <h2>Call to action! it's time!</h2>
+
+                        <h3>Sign up for our product by clicking that button right over there!</h3>
+                    </text-content>
+
+                    <a class="button" href="#">Sign up</a>
+                </cta-block>
+
+            </inner-column>
+        </section>
+    </main>
+
+    <footer>
+        <inner-column>
+            <h2>Copyright &copy; The Odin Project 2021</h2>
+        </inner-column>
+    </footer>
 </body>
 </html>
